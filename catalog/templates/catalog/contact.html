@@ -1,0 +1,44 @@
+<!-- catalog/templates/catalog/contact.html -->
+{% extends 'base.html' %}
+
+{% block title %}Контакты - NextGen Shop{% endblock %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1 class="text-center">Контактная информация</h1>
+        <p class="text-center">Мы готовы ответить на ваши вопросы и помочь вам. Свяжитесь с нами любым удобным
+            способом.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-heading">Наши контактные данные</h2>
+                <p><strong>Телефон:</strong> +7 (123) 456-78-90</p>
+                <p><strong>Электронная почта:</strong> <a href="mailto:info@nextgenshop.ru">info@nextgenshop.ru</a></p>
+                <p><strong>Адрес:</strong> ул. Примерная, д. 1, Москва, Россия</p>
+            </div>
+            <div class="col-md-6">
+                <h2 class="section-heading">Связаться с нами</h2>
+                <p>Оставьте ваше сообщение, и мы свяжемся с вами в ближайшее время.</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Ваше имя</label>
+                        <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required
+                               name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Ваш Email адрес</label>
+                        <input type="email" class="form-control" id="email" placeholder="Введите ваш Email" required
+                               name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Ваше сообщение</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Введите ваше сообщение"
+                                  required name="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
