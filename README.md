@@ -23,6 +23,7 @@ cp env.example .env
 ### 3. Install Dependencies
 The project uses Poetry for dependency management. Ensure Poetry is installed, then run the following command to install all dependencies:
 ```bash
+poetry shell
 poetry install
 ```
 ### 4. Start Migrations

@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from catalog.models import Product
+from catalog.models import Product, ContactInfo
 
 
 def home(request):
-    last_products = Product.objects.order_by('-created_at')[:6]
+    last_products = Product.objects.order_by("-created_at")[:6]
     for item in last_products:
-        print(f'{item.name} | {item.description} | {item.price}$')
+        print(f"{item.name} | {item.description} | {item.price}$")
     return render(request, "catalog/home.html")
 
 
@@ -16,4 +16,7 @@ def contact(request):
         message = request.POST.get("message")
 
         print(f"{name} ({email}): {message}")
-    return render(request, "catalog/contact.html")
+
+    contact_info = ContactInfo.objects.first()
+
+    return render(request, "catalog/contact.html", {'contact_info': contact_info})
