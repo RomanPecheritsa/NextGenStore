@@ -4,19 +4,46 @@ from catalog.models import Product, Category
 
 
 class Command(BaseCommand):
+    """
+    Custom management command to populate the database with data from a JSON fixture file.
+    The command will first clear existing data from the Product and Category tables,
+    and then repopulate them with the data from the fixture file `catalog_data.json`.
+    """
+
     @staticmethod
     def json_read_categories():
+        """
+        Reads and filters category data from the fixture file.
+
+        Returns:
+            list: A list of dictionaries containing data for Category model instances.
+        """
         with open("fixtures/catalog_data.json", encoding="utf-8") as file:
             data = json.load(file)
             return [item for item in data if item["model"] == "catalog.category"]
 
     @staticmethod
     def json_read_products():
+        """
+        Reads and filters product data from the fixture file.
+
+        Returns:
+            list: A list of dictionaries containing data for Product model instances.
+        """
         with open("fixtures/catalog_data.json", encoding="utf-8") as file:
             data = json.load(file)
             return [item for item in data if item["model"] == "catalog.product"]
 
     def handle(self, *args, **options):
+        """
+        Main method that handles the execution of the command.
+
+        - Deletes all existing data from the Product and Category tables.
+        - Reads category and product data from the fixture file.
+        - Creates new instances of Category and Product based on the fixture data.
+        - Saves the new instances in bulk to the database.
+        """
+        # Clear existing data
         Product.objects.all().delete()
         Category.objects.all().delete()
 
