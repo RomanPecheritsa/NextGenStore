@@ -25,10 +25,21 @@ The project uses Poetry for dependency management. Ensure Poetry is installed, t
 ```bash
 poetry install
 ```
-### 4. Run the Project
-To start the server and start migrations, use the following command:
+### 4. Start Migrations
+To start migrations, use the following command:
 ```bash
 python3 manage.py migrate
+```
+
+### 5. Load Fixture
+Loading test fixtures for the database:
+```bash
+python manage.py load_fixtures
+```
+
+### 6. Run Server
+To run server, use the following command:
+```bash
 python3 manage.py runserver
 ```
 The server will be available at http://127.0.0.1:8000
