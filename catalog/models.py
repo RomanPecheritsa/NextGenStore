@@ -72,6 +72,23 @@ class Product(models.Model):
         ordering = ["name", "-price", "created_at", "-updated_at"]
 
 
+class ContactInfo(models.Model):
+    """
+    Model to store static contact information.
+    """
+
+    phone = models.CharField(max_length=20, verbose_name="Номер телефона")
+    email = models.EmailField(verbose_name="Почта")
+    address = models.TextField(verbose_name="Адрес")
+
+    def __str__(self):
+        return f"{self.phone}" f"{self.email}" f"{self.address}"
+
+    class Meta:
+        verbose_name = "Контактная информация"
+        verbose_name_plural = "Контактные информации"
+
+
 @receiver(post_delete, sender=Product)
 def delete_image(sender, instance, **kwargs):
     """
