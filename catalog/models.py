@@ -46,7 +46,7 @@ class Product(models.Model):
     description = models.TextField(**BLANK_NULL_TRUE, verbose_name='Описание товара')
     preview = models.ImageField(**BLANK_NULL_TRUE, upload_to=upload_to, verbose_name='Изображение товара')
     category = models.ForeignKey(to=Category, on_delete=models.CASCADE)
-    price = models.DecimalField(decimal_places=2, default=Decimal('0.00'), verbose_name='Цена за покупку')
+    price = models.DecimalField(max_digits=10, decimal_places=2, default=Decimal('0.00'), verbose_name='Цена за покупку')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата создания')
     updated_at = models.DateTimeField(auto_now=True, verbose_name='Дата последнего изменения')
 
