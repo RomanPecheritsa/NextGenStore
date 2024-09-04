@@ -43,7 +43,6 @@ class Command(BaseCommand):
         - Creates new instances of Category and Product based on the fixture data.
         - Saves the new instances in bulk to the database.
         """
-        # Clear existing data
         Product.objects.all().delete()
         Category.objects.all().delete()
 
