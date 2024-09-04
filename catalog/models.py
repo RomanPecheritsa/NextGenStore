@@ -1,6 +1,8 @@
 from django.db import models
+from django.db.models.signals import post_delete
+from django.dispatch import receiver
 from decimal import Decimal
-
+import os
 
 BLANK_NULL_TRUE = {"blank": True, "null": True}
 
@@ -68,3 +70,17 @@ class Product(models.Model):
         verbose_name = "Товар"
         verbose_name_plural = "Товары"
         ordering = ["name", "-price", "created_at", "-updated_at"]
+
+
+@receiver(post_delete, sender=Product)
+def delete_image(sender, instance, **kwargs):
+    """
+    Delete the file from filesystem when the corresponding `Product` object is deleted.
+
+    Args:
+        sender (Type[models.Model]): The model class that sent the signal.
+        instance (Product): The instance of the model that is being deleted.
+    """
+    if instance.preview:
+        if os.path.isfile(instance.preview.path):
+            os.remove(instance.preview.path)
