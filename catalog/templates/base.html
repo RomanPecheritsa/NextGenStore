@@ -12,7 +12,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
     <div class="container-fluid">
         <!-- Левый блок с названием -->
-        <a class="navbar-brand" href="{% url 'home' %}">NextGen Shop</a>
+        <a class="navbar-brand" href="{% url 'catalog:home' %}">NextGen Shop</a>
 
         <!-- Кнопка переключения навигации для мобильных устройств -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -23,8 +23,8 @@
         <!-- Центральный блок с навигацией -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Главная</a>
-                <a class="nav-link active" href="{% url 'contact' %}">Контакты</a>
+                <a class="nav-link active" aria-current="page" href="{% url 'catalog:home' %}">Главная</a>
+                <a class="nav-link active" href="{% url 'catalog:contact' %}">Контакты</a>
             </div>
         </div>
 
