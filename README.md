@@ -17,7 +17,7 @@ cd NextGenStore
 Open.env and replace the values of the variables with your own
 
 ```bash
-cp env.example .env
+cp .env.example .env
 ```
 
 ### 3. Install Dependencies
@@ -35,7 +35,7 @@ python3 manage.py migrate
 ### 5. Load Fixture
 Loading test fixtures for the database:
 ```bash
-python manage.py load_fixtures
+python3 manage.py load_fixtures
 ```
 
 ### 6. Run Server
