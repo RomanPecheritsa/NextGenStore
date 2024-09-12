@@ -8,4 +8,4 @@ def preview_url(product):
 
     if product.preview:
         return product.preview.url
-    return ''
+    return ""
