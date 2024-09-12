@@ -1,0 +1,14 @@
+{% load static %}
+<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+    <a href="{% url 'catalog:home' %}" class="d-flex flex-column align-items-start link-body-emphasis text-decoration-none">
+        <div class="d-flex align-items-center">
+            <img class="mb-2" src="{% static 'image/logo.webp' %}" alt="" width="90" height="85">
+            <span class="fs-2 ms-2">NextGen Store</span>
+        </div>
+    </a>
+    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'catalog:home' %}">Главная</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="{% url 'catalog:contact' %}">Контакты</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Вход</a>
+    </nav>
+</div>

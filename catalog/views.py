@@ -1,22 +1,27 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator
 from catalog.models import Product, ContactInfo
 
 
 def home(request):
-    last_products = Product.objects.order_by("-created_at")[:6]
-    for item in last_products:
-        print(f"{item.name} | {item.description} | {item.price}$")
-    return render(request, "catalog/home.html")
+    product_list = Product.objects.all().order_by("-created_at")
+    paginator = Paginator(product_list, 6)
+
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+    context = {"products": product_list, "page_obj": page_obj}
+    return render(request, "catalog/index.html", context)
 
 
 def contact(request):
-    if request.method == "POST":
-        name = request.POST.get("name")
-        email = request.POST.get("email")
-        message = request.POST.get("message")
+    contacts = ContactInfo.objects.first()
+    context = {
+        "contact_info": contacts,
+    }
+    return render(request, "catalog/contact.html", context)
 
-        print(f"{name} ({email}): {message}")
 
-    contact_info = ContactInfo.objects.first()
-
-    return render(request, "catalog/contact.html", {'contact_info': contact_info})
+def product(request, pk):
+    product = Product.objects.get(pk=pk)
+    context = {"product": product}
+    return render(request, "catalog/product_detail.html", context)
