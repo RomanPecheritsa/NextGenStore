@@ -34,7 +34,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.description }}</p>
+                        <p class="card-text">{{ product.description|slice:":100" }}</p>
                         <a class="btn btn-outline-primary" href="{% url 'catalog:product' product.pk %}" role="button">Подробнее</a>
                         <a class="btn btn-outline-success" href="#" role="button">{{ product.price }}</a>
                     </div>
@@ -47,7 +47,7 @@
         <ul class="pagination justify-content-center">
             {% if page_obj.has_previous %}
                 <li class="page-item">
-                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Назад</a>
                 </li>
             {% else %}
                 <li class="page-item disabled">
@@ -63,7 +63,7 @@
 
             {% if page_obj.has_next %}
                 <li class="page-item">
-                    <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+                    <a class="page-link" href="?page={{ page_obj.next_page_number }}">Вперед</a>
                 </li>
             {% else %}
                 <li class="page-item disabled">
