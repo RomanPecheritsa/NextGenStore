@@ -26,17 +26,17 @@
     <h2 class="text-center md-3">Популярные товары</h2><br>
 
     <div class="row row-cols-1 row-cols-md-3 mb-4 g-4 text-center">
-        {% for product in page_obj %}
+        {% for object in object_list %}
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <div class="image-container">
-                        <img src="{{ product | preview_url }}" class="fixed-img-size" alt="{{ product.name }}">
+                        <img src="{{ object|preview_url }}" class="fixed-img-size" alt="{{ product.name }}">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.description|slice:":100" }}</p>
-                        <a class="btn btn-outline-primary" href="{% url 'catalog:product' product.pk %}" role="button">Подробнее</a>
-                        <a class="btn btn-outline-success" href="#" role="button">{{ product.price }}</a>
+                        <h5 class="card-title">{{ object.name }}</h5>
+                        <p class="card-text">{{ object.description|slice:":100" }}</p>
+                        <a class="btn btn-outline-primary" href="{% url 'catalog:product' object.pk %}" role="button">Подробнее</a>
+                        <a class="btn btn-outline-success" href="#" role="button">{{ object.price }}</a>
                     </div>
                 </div>
             </div>
