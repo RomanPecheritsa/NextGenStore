@@ -26,51 +26,24 @@
     <h2 class="text-center md-3">Популярные товары</h2><br>
 
     <div class="row row-cols-1 row-cols-md-3 mb-4 g-4 text-center">
-        {% for product in page_obj %}
+        {% for object in object_list %}
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <div class="image-container">
-                        <img src="{{ product | preview_url }}" class="fixed-img-size" alt="{{ product.name }}">
+                        <img src="{{ object|preview_url }}" class="fixed-img-size" alt="{{ product.name }}">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">{{ product.name }}</h5>
-                        <p class="card-text">{{ product.description|slice:":100" }}</p>
-                        <a class="btn btn-outline-primary" href="{% url 'catalog:product' product.pk %}" role="button">Подробнее</a>
-                        <a class="btn btn-outline-success" href="#" role="button">{{ product.price }}</a>
+                        <h5 class="card-title">{{ object.name }}</h5>
+                        <p class="card-text">{{ object.description|slice:":100" }}</p>
+                        <div class="btn-group">
+                            <a class="btn btn-outline-primary" href="{% url 'catalog:product' object.pk %}"
+                               role="button">Подробнее</a>
+                            <a class="btn btn-outline-success" href="#" role="button">{{ object.price }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
         {% endfor %}
     </div>
-
-    <nav aria-label="Pagination">
-        <ul class="pagination justify-content-center">
-            {% if page_obj.has_previous %}
-                <li class="page-item">
-                    <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Назад</a>
-                </li>
-            {% else %}
-                <li class="page-item disabled">
-                    <a class="page-link">Назад</a>
-                </li>
-            {% endif %}
-
-            {% for num in page_obj.paginator.page_range %}
-                <li class="page-item {% if page_obj.number == num %}active{% endif %}">
-                    <a class="page-link" href="?page={{ num }}">{{ num }}</a>
-                </li>
-            {% endfor %}
-
-            {% if page_obj.has_next %}
-                <li class="page-item">
-                    <a class="page-link" href="?page={{ page_obj.next_page_number }}">Вперед</a>
-                </li>
-            {% else %}
-                <li class="page-item disabled">
-                    <a class="page-link">Вперед</a>
-                </li>
-            {% endif %}
-        </ul>
-    </nav>
-
+    {% include 'catalog/includes/inc_pagination.html' %}
 {% endblock %}

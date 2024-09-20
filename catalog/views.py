@@ -1,27 +1,22 @@
-from django.shortcuts import render, get_object_or_404
-from django.core.paginator import Paginator
+from django.views.generic import TemplateView, ListView, DetailView
+
 from catalog.models import Product, ContactInfo
 
 
-def home(request):
-    product_list = Product.objects.all().order_by("-created_at")
-    paginator = Paginator(product_list, 6)
-
-    page_number = request.GET.get("page", 1)
-    page_obj = paginator.get_page(page_number)
-    context = {"products": product_list, "page_obj": page_obj}
-    return render(request, "catalog/index.html", context)
+class ProductListView(ListView):
+    model = Product
+    paginate_by = 6
+    ordering = ["-created_at"]
 
 
-def contact(request):
-    contacts = ContactInfo.objects.first()
-    context = {
-        "contact_info": contacts,
-    }
-    return render(request, "catalog/contact.html", context)
+class ContactTemplateView(TemplateView):
+    template_name = "catalog/contact.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["contact_info"] = ContactInfo.objects.first()
+        return context
 
 
-def product(request, pk):
-    item = get_object_or_404(Product, pk=pk)
-    context = {"product": item}
-    return render(request, "catalog/product_detail.html", context)
+class ProductDetailView(DetailView):
+    model = Product
