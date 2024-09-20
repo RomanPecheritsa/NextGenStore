@@ -35,8 +35,11 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ object.name }}</h5>
                         <p class="card-text">{{ object.description|slice:":100" }}</p>
-                        <a class="btn btn-outline-primary" href="{% url 'catalog:product' object.pk %}" role="button">Подробнее</a>
-                        <a class="btn btn-outline-success" href="#" role="button">{{ object.price }}</a>
+                        <div class="btn-group">
+                            <a class="btn btn-outline-primary" href="{% url 'catalog:product' object.pk %}"
+                               role="button">Подробнее</a>
+                            <a class="btn btn-outline-success" href="#" role="button">{{ object.price }}</a>
+                        </div>
                     </div>
                 </div>
             </div>
