@@ -1,30 +1,16 @@
-from django.db import models
-from django.db.models.signals import post_delete
-from django.dispatch import receiver
 from decimal import Decimal
-import os
+from django.db import models
+from catalog.utils import upload_to
+
 
 BLANK_NULL_TRUE = {"blank": True, "null": True}
-
-
-def upload_to(instance, filename):
-    """
-    Generate a file upload path based on the model type.
-    Args:
-        instance (models.Model): The model instance for which the file is being uploaded.
-        filename (str): The name of the file being uploaded.
-    Returns:
-        str: The path where the file will be saved, in the format 'uploads/<model_name>/<filename>'.
-    Example:
-        If the model is `Product` and the file name is `image.jpg`, the path will be `uploads/product/image.jpg`.
-    """
-    return f"uploads/{instance.__class__.__name__.lower()}/{filename}"
 
 
 class Category(models.Model):
     """
     A model for storing product categories.
     """
+
     name = models.CharField(max_length=50, verbose_name="Наименование категории")
     description = models.TextField(verbose_name="Описание категории")
 
@@ -41,6 +27,7 @@ class Product(models.Model):
     """
     A model for storing information about products.
     """
+
     name = models.CharField(max_length=50, verbose_name="Наименование товара")
     description = models.TextField(**BLANK_NULL_TRUE, verbose_name="Описание товара")
     preview = models.ImageField(
@@ -71,6 +58,7 @@ class ContactInfo(models.Model):
     """
     Model to store static contact information.
     """
+
     phone = models.CharField(max_length=20, verbose_name="Номер телефона")
     email = models.EmailField(verbose_name="Почта")
     address = models.TextField(verbose_name="Адрес")
@@ -81,16 +69,3 @@ class ContactInfo(models.Model):
     class Meta:
         verbose_name = "Контактная информация"
         verbose_name_plural = "Контактные информации"
-
-
-@receiver(post_delete, sender=Product)
-def delete_image(sender, instance, **kwargs):
-    """
-    Delete the file from filesystem when the corresponding `Product` object is deleted.
-    Args:
-        sender (Type[models.Model]): The model class that sent the signal.
-        instance (Product): The instance of the model that is being deleted.
-    """
-    if instance.preview:
-        if os.path.isfile(instance.preview.path):
-            os.remove(instance.preview.path)
