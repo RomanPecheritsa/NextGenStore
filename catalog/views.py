@@ -16,10 +16,9 @@ class ContactTemplateView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['contact_info'] = ContactInfo.objects.first()
+        context["contact_info"] = ContactInfo.objects.first()
         return context
 
 
 class ProductDetailView(DetailView):
     model = Product
-
