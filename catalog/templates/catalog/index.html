@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="content text-center mt-5">
+            <h1>Добро пожаловать на наш сайт NextGen Store</h1>
+            <p>Здесь вы найдете каталог новейших товаров и интересный блог, который поможет вам оставаться в курсе событий в мире технологий и современных решений.</p>
+        </div>
+
+        <div class="row mt-4 mb-5">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Каталог товаров</h2>
+                        <p class="card-text">Ознакомьтесь с нашим каталогом, где представлены лучшие продукты, которые соответствуют вашим требованиям.</p>
+                        <div class="text-center mt-4">
+                            <a href="{% url 'catalog:product_list' %}" class="btn btn-primary">Перейти к каталогу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title text-center">Блог</h2>
+                        <p class="card-text">Читайте наши последние публикации и оставайтесь в курсе новейших тенденций и советов, которые помогут вам в выборе товаров и в жизни.</p>
+                        <div class="text-center mt-4">
+                            <a href="{% url 'blog:article_list' %}" class="btn btn-primary">Перейти в блог</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
