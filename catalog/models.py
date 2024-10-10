@@ -1,7 +1,7 @@
 from decimal import Decimal
 from django.db import models
 from catalog.utils import upload_to
-
+from users.models import User
 
 BLANK_NULL_TRUE = {"blank": True, "null": True}
 
@@ -44,6 +44,7 @@ class Product(models.Model):
     updated_at = models.DateTimeField(
         auto_now=True, verbose_name="Дата последнего изменения"
     )
+    owner = models.ForeignKey(User, verbose_name='Владелец товара', **BLANK_NULL_TRUE, on_delete=models.SET_NULL)
 
     def __str__(self):
         return self.name
