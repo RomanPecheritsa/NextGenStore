@@ -38,7 +38,17 @@ Loading test fixtures for the database:
 python3 manage.py load_fixtures
 ```
 
-### 6. Run Server
+### 6. Create Superuser
+Enter the command in the terminal:
+```bash
+python manage.py csu
+```
+or
+```bash
+python manage.py csu --email=example@example.com --password=SuperSecretPassword123
+```
+
+### 7. Run Server
 To run server, use the following command:
 ```bash
 python3 manage.py runserver

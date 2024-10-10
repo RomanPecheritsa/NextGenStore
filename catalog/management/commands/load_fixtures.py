@@ -70,4 +70,4 @@ class Command(BaseCommand):
             articles_for_create.append(Article(id=item["pk"], **article_data))
         Article.objects.bulk_create(articles_for_create)
 
-        print("Success!")
+        self.stdout.write(self.style.SUCCESS('База данных успешно заполнена'))
