@@ -9,6 +9,7 @@ from django.views.generic import (
     DeleteView,
 )
 from catalog.forms import ProductForm, VersionForm
+from catalog.mixins import CustomLoginRequiredMixin
 from catalog.models import Product, ContactInfo, Version
 
 
@@ -39,7 +40,7 @@ class ProductDetailView(DetailView):
     model = Product
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(CustomLoginRequiredMixin, CreateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy("catalog:product_list")
@@ -57,6 +58,7 @@ class ProductCreateView(CreateView):
         return context_data
 
     def form_valid(self, form):
+        form.instance.owner = self.request.user
         context = self.get_context_data()
         formset = context["formset"]
         if formset.is_valid():
@@ -66,7 +68,7 @@ class ProductCreateView(CreateView):
         return super().form_valid(form)
 
 
-class ProductUpdateView(UpdateView):
+class ProductUpdateView(CustomLoginRequiredMixin, UpdateView):
     model = Product
     form_class = ProductForm
     success_url = reverse_lazy("catalog:product_list")
@@ -104,6 +106,6 @@ class ProductUpdateView(UpdateView):
         return self.form_invalid(form)
 
 
-class ProductDeleteView(DeleteView):
+class ProductDeleteView(CustomLoginRequiredMixin, DeleteView):
     model = Product
     success_url = reverse_lazy("catalog:product_list")
