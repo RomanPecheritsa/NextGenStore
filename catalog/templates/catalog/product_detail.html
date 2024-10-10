@@ -4,10 +4,16 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-md-6">
-                <img src="{{ object | preview_url }}" class="img-fluid" alt="{{ object.name }}" style="background-color: white;">
+                <img src="{{ object | preview_url }}" class="img-fluid" alt="{{ object.name }}"
+                     style="background-color: white;">
             </div>
             <div class="col-md-6">
                 <h1>{{ object.name }}</h1>
+                {% if object.owner %}
+                    <div class="card-footer text-muted">
+                        Создано: {{ object.owner }}
+                    </div>
+                {% endif %}
                 <p class="lead">{{ object.price }} руб.</p>
                 <p>{{ object.description }}</p>
                 <div class="d-flex">
