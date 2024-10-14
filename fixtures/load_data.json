@@ -1,93 +1,684 @@
 [
   {
-    "model": "blog.article",
-    "pk": 1,
+    "model": "admin.logentry",
+    "pk": 4,
     "fields": {
-      "title": "Как выбрать идеальный ноутбук: подробное руководсто",
-      "slug": null,
-      "content": "<p>Выбор ноутбука может стать настоящим испытанием, особенно с учетом множества доступных моделей и характеристик. Чтобы помочь вам принять правильное решение, мы собрали основные рекомендации по выбору идеального ноутбука.</p>\r\n            <h4>1. Определите свои потребности</h2>\r\n            <p>Прежде чем приступить к выбору, оцените, для каких задач вам понадобится ноутбук. Если вы планируете использовать его для работы с текстами и интернет-серфинга, не обязательно тратиться на топовые модели. Для игр, видеомонтажа или других ресурсоемких задач вам потребуется более мощный компьютер.</p>\r\n            <h4>2. Процессор (CPU)</h2>\r\n            <p>Процессор — это «мозг» вашего ноутбука. Для повседневных задач подойдет процессор Intel Core i5 или AMD Ryzen 5. Для более сложных задач выбирайте Intel Core i7 или AMD Ryzen 7. Процессоры последних поколений обеспечивают лучшую производительность и энергоэффективность.</p>\r\n            <h4>3. Оперативная память (RAM)</h2>\r\n            <p>Оперативная память влияет на многозадачность и скорость работы ноутбука. Минимум для комфортного использования — 8 ГБ. Если вы работаете с тяжелыми программами или играете в современные игры, лучше выбрать модель с 16 ГБ RAM или больше.</p>\r\n            <h4>4. Хранилище</h2>\r\n            <p>SSD (твердотельный накопитель) обеспечивает более быструю загрузку системы и программ по сравнению с традиционными HDD (жесткими дисками). Рекомендуется выбирать ноутбук с SSD объемом от 256 ГБ. Если вам требуется больше пространства, рассмотрите модели с комбинированным SSD и HDD.</p>\r\n            <h4>5. Дисплей</h2>\r\n            <p>Размер экрана и его разрешение также важны. Для большинства пользователей достаточно экрана с диагональю 15-17 дюймов и разрешением Full HD (1920x1080). Если вы работаете с графикой или видео, стоит рассмотреть модели с более высоким разрешением и качественной цветопередачей.</p>\r\n            <h4>6. Аккумулятор</h2>\r\n            <p>Время работы от аккумулятора особенно важно для пользователей, которые часто работают вне дома. Обратите внимание на модели с длительным временем работы и возможностью быстрой зарядки.</p>\r\n            <h4>7. Порты и разъемы</h2>\r\n            <p>Проверьте наличие необходимых вам портов — USB, HDMI, кард-ридер. Некоторые современные ноутбуки могут иметь только USB-C порты, что требует наличия переходников.</p>\r\n            <h4>8. Операционная система</h2>\r\n            <p>Выбор между Windows, macOS и Linux зависит от ваших предпочтений и задач. Windows является наиболее универсальной системой, macOS — для пользователей Apple, а Linux — для тех, кто предпочитает открытый исходный код.</p>",
-      "preview": "uploads/article/nbooks.webp",
-      "created_at": "2024-10-10T09:04:12.864Z",
-      "is_published": true,
-      "views_count": 98
+      "action_time": "2024-10-14T10:57:34.721Z",
+      "user": 16,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "moderator",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
-    "model": "blog.article",
-    "pk": 2,
+    "model": "admin.logentry",
+    "pk": 5,
     "fields": {
-      "title": "Как выбрать идеальный смартфон: советы по выбору",
-      "slug": "test",
-      "content": "<p>В современном мире смартфоны стали неотъемлемой частью нашей жизни. Выбор подходящего телефона может быть непростой задачей, особенно с таким большим количеством моделей и характеристик на рынке. В этой статье мы рассмотрим ключевые моменты, которые стоит учитывать при выборе нового смартфона.</p>\r\n            <h4>1. Определите свои потребности</h2>\r\n            <p>Перед тем как приступать к выбору телефона, важно понять, для каких целей он вам нужен. Если вы планируете использовать его в основном для звонков и сообщений, возможно, вам не нужны самые современные технологии. Однако, если вы хотите использовать телефон для игр, фотографий и видео, стоит обратить внимание на более мощные устройства.</p>\r\n            <h4>2. Экран и его характеристики</h2>\r\n            <p>Экран — один из наиболее важных аспектов при выборе смартфона. Обратите внимание на размер дисплея и его разрешение. Большой экран с высоким разрешением обеспечит лучшее качество изображения, но он может сделать телефон менее компактным. Также важно учитывать тип экрана (LCD, OLED) и его характеристики, такие как яркость и контрастность.</p>\r\n            <h4>3. Производительность</h2>\r\n            <p>Производительность телефона напрямую связана с его процессором и оперативной памятью. Чем мощнее процессор и больше оперативной памяти, тем лучше производительность устройства. Для большинства пользователей вполне достаточно современных процессоров среднего уровня, но если вы часто запускаете ресурсоёмкие приложения или игры, рассмотрите флагманские модели.</p>\r\n            <h2>4. Камера</h2>\r\n            <p>Качество камеры стало одним из главных факторов при выборе телефона. Обратите внимание на количество мегапикселей, но не забывайте, что важны и другие параметры, такие как диафрагма, стабилизация изображения и дополнительные функции (например, ночной режим, ультраширокий угол).</p>\r\n            <h4>5. Время работы от аккумулятора</h2>\r\n            <p>Аккумулятор играет важную роль в использовании смартфона. Чем больше ёмкость аккумулятора, тем дольше телефон будет работать без подзарядки. Однако, не забывайте, что время работы зависит не только от ёмкости аккумулятора, но и от оптимизации программного обеспечения и энергопотребления устройства.</p>\r\n            <h4>6. Хранение данных</h2>\r\n            <p>Место для хранения данных также важно. Современные смартфоны обычно предлагают от 64 ГБ до 512 ГБ встроенной памяти. Если вы планируете хранить много фотографий, видео и приложений, выберите модель с большим объёмом памяти или поддержкой карт microSD.</p>\r\n            <h4>7. Операционная система и обновления</h2>\r\n            <p>Убедитесь, что выбранный вами смартфон поддерживает актуальные версии операционной системы и будет получать регулярные обновления. Это не только улучшает безопасность устройства, но и обеспечивает доступ к последним функциям и улучшениям.</p>\r\n            <h4>8. Цена</h2>\r\n            <p>Наконец, цена — это важный фактор. Постарайтесь выбрать телефон, который соответствует вашим потребностям и бюджету. Не всегда самые дорогие модели являются лучшими, и многие устройства среднего класса предлагают отличное соотношение цены и качества.</p>\r\n            <h4>Заключение</h2>\r\n            <p>Выбор смартфона — это важное решение, которое может существенно повлиять на вашу повседневную жизнь. Учитывая эти ключевые моменты и тщательно исследуя доступные варианты, вы сможете найти идеальное устройство, которое будет удовлетворять ваши потребности и предпочтения. Не спешите с выбором и сравните несколько моделей перед тем, как сделать окончательное решение.</p>",
-      "preview": "uploads/article/phones.jpg",
-      "created_at": "2024-10-10T09:04:12.864Z",
-      "is_published": true,
-      "views_count": 98
+      "action_time": "2024-10-14T11:03:10.224Z",
+      "user": 16,
+      "content_type": 12,
+      "object_id": "17",
+      "object_repr": "test_moderator_group@test.ru",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
     }
   },
   {
-    "model": "blog.article",
+    "model": "admin.logentry",
     "pk": 6,
     "fields": {
-      "title": "Смартфоны будущего: Что нас ждет через 5 лет?",
-      "slug": "3245",
-      "content": "Современные смартфоны впечатляют своей мощностью и функциональностью, но что будет через 5 лет? Развитие гибких экранов обещает нам устройства, которые можно будет сгибать в несколько раз. Батареи станут значительно более ёмкими благодаря новым материалам, а технологии быстрой зарядки позволят восполнить их за считанные минуты. Также ожидается широкое распространение 6G-сетей, что обеспечит ещё большую скорость передачи данных. Искусственный интеллект в смартфонах станет гораздо более \"умным\", адаптируясь к потребностям пользователя и активно предсказывая его действия. В целом, смартфоны будущего будут еще более персонализированными и интегрированными с другими гаджетами.",
-      "preview": "uploads/article/2-2.jpg",
-      "created_at": "2024-10-10T09:04:12.864Z",
-      "is_published": true,
-      "views_count": 98
+      "action_time": "2024-10-14T11:03:35.267Z",
+      "user": 16,
+      "content_type": 12,
+      "object_id": "17",
+      "object_repr": "test_moderator_group@test.ru",
+      "action_flag": 3,
+      "change_message": ""
     }
   },
   {
-    "model": "blog.article",
+    "model": "admin.logentry",
     "pk": 7,
     "fields": {
-      "title": "Беспроводные наушники: будущее без проводов",
-      "slug": null,
-      "content": "Беспроводные наушники стали неотъемлемой частью современной жизни. Сегодня это не просто аксессуар для музыки — это целая экосистема, связанная с вашими смартфонами, умными часами и даже автомобилями. Современные наушники предлагают активное шумоподавление, что делает их идеальными для использования в шумных местах, таких как самолеты и общественный транспорт. Технологии Bluetooth развиваются, и новые версии обеспечивают стабильное соединение и высокое качество звука. В будущем мы можем ожидать более совершенные технологии улучшения звука, а также увеличенную продолжительность работы на одном заряде. Важной тенденцией становится миниатюризация и улучшение эргономики.",
-      "preview": "uploads/article/221.jpg",
-      "created_at": "2024-10-10T09:04:12.864Z",
-      "is_published": true,
-      "views_count": 98
+      "action_time": "2024-10-14T11:26:24.394Z",
+      "user": 16,
+      "content_type": 8,
+      "object_id": "30",
+      "object_repr": "Nest Learning Thermostat (3rd Gen)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is published\"]}}]"
     }
   },
   {
-    "model": "blog.article",
+    "model": "admin.logentry",
     "pk": 8,
     "fields": {
-      "title": "Умные часы: личный ассистент на вашем запястье",
-      "slug": null,
-      "content": "Умные часы давно перестали быть просто устройствами для показа времени. Сегодня это мини-компьютеры, которые могут отслеживать ваши шаги, измерять пульс, следить за качеством сна и даже управлять умным домом. Часы становятся всё более автономными благодаря встроенным SIM-картам и возможностям совершения звонков и отправки сообщений без подключения к смартфону. Важным направлением развития умных часов является здоровье. Новые модели позволяют проводить ЭКГ и измерять уровень кислорода в крови, что делает их полезными не только для спортсменов, но и для людей с хроническими заболеваниями.",
-      "preview": "uploads/article/clock.jpg",
-      "created_at": "2024-10-10T09:04:12.864Z",
-      "is_published": true,
-      "views_count": 98
+      "action_time": "2024-10-14T11:26:39.881Z",
+      "user": 16,
+      "content_type": 8,
+      "object_id": "30",
+      "object_repr": "Nest Learning Thermostat (3rd Gen)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Is published\"]}}]"
     }
   },
   {
-    "model": "blog.article",
+    "model": "admin.logentry",
     "pk": 9,
     "fields": {
-      "title": "Умные часы: личный ассистент",
-      "slug": "umnyie-chasyi-lichnyij-assistent",
-      "content": "Умные часы давно перестали быть просто устройствами для показа времени. Сегодня это мини-компьютеры, которые могут отслеживать ваши шаги, измерять пульс, следить за качеством сна и даже управлять умным домом. Часы становятся всё более автономными благодаря встроенным SIM-картам и возможностям совершения звонков и отправки сообщений без подключения к смартфону. Важным направлением развития умных часов является здоровье. Новые модели позволяют проводить ЭКГ и измерять уровень кислорода в крови, что делает их полезными не только для спортсменов, но и для людей с хроническими заболеваниями.",
-      "preview": "uploads/article/clock_Ml4mEnS.jpg",
-      "created_at": "2024-10-10T09:04:12.864Z",
-      "is_published": false,
-      "views_count": 98
+      "action_time": "2024-10-14T11:39:54.795Z",
+      "user": 16,
+      "content_type": 3,
+      "object_id": "2",
+      "object_repr": "moderator",
+      "action_flag": 2,
+      "change_message": "[]"
     }
   },
   {
-    "model": "blog.article",
+    "model": "admin.logentry",
     "pk": 10,
     "fields": {
-      "title": "Интернет вещей: умный дом как реальность",
-      "slug": "internet-veschej-umnyij-dom-kak-realnost",
-      "content": "Интернет вещей (IoT) быстро проникает в нашу повседневную жизнь, и одним из его ключевых направлений становится умный дом. От умных лампочек, которые можно настроить с помощью смартфона, до роботов-пылесосов и умных термостатов — все это позволяет автоматизировать и упростить быт. В будущем роль IoT только усилится. Например, холодильники смогут сами заказывать продукты, когда их запасы подойдут к концу, а умные системы безопасности обеспечат круглосуточный мониторинг дома с оповещениями в случае подозрительной активности. Таким образом, умные дома становятся не просто трендом, а настоящей необходимостью для комфортной и безопасной жизни.",
-      "preview": "uploads/article/p8615.jpg",
-      "created_at": "2024-10-10T09:04:12.864Z",
-      "is_published": true,
-      "views_count": 101
+      "action_time": "2024-10-14T11:40:05.960Z",
+      "user": 16,
+      "content_type": 3,
+      "object_id": "2",
+      "object_repr": "moderator",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-10-14T11:40:25.933Z",
+      "user": 16,
+      "content_type": 3,
+      "object_id": "3",
+      "object_repr": "moderator",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add Категория",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change Категория",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete Категория",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view Категория",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Товар",
+      "content_type": 8,
+      "codename": "add_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Товар",
+      "content_type": 8,
+      "codename": "change_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Товар",
+      "content_type": 8,
+      "codename": "delete_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Товар",
+      "content_type": 8,
+      "codename": "view_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Контактная информация",
+      "content_type": 9,
+      "codename": "add_contactinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Контактная информация",
+      "content_type": 9,
+      "codename": "change_contactinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Контактная информация",
+      "content_type": 9,
+      "codename": "delete_contactinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Контактная информация",
+      "content_type": 9,
+      "codename": "view_contactinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Версия",
+      "content_type": 11,
+      "codename": "add_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Версия",
+      "content_type": 11,
+      "codename": "change_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Версия",
+      "content_type": 11,
+      "codename": "delete_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Версия",
+      "content_type": 11,
+      "codename": "view_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add статья",
+      "content_type": 10,
+      "codename": "add_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change статья",
+      "content_type": 10,
+      "codename": "change_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete статья",
+      "content_type": 10,
+      "codename": "delete_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view статья",
+      "content_type": 10,
+      "codename": "view_article"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Пользователь",
+      "content_type": 12,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Пользователь",
+      "content_type": 12,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Пользователь",
+      "content_type": 12,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Пользователь",
+      "content_type": 12,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Может отменить публикацию продукта",
+      "content_type": 8,
+      "codename": "can_unpublish_product"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Может изменить описание продукта",
+      "content_type": 8,
+      "codename": "can_change_description"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Может изменить категорию продукта",
+      "content_type": 8,
+      "codename": "can_change_category"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 4,
+    "fields": {
+      "name": "moderator",
+      "permissions": [
+        47,
+        46
+      ]
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "product"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "catalog",
+      "model": "contactinfo"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "blog",
+      "model": "article"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "catalog",
+      "model": "version"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "j3ntswqifnwq4dghkyt9yuwg6z4oebm0",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYqcuCUNS_Y9Q-XYDi2gROpnhbg7VOoCtm9m3ssMtK3jsC06D5OYi3Hm9Lsl4oeWHcidyq1armWdp2R3xR50sX0VfV4P9-9gpGX81gAhA2ogPncRmxhI2IM6RE7S5gaxjSDc5YiSACL7kDF1Ko5UyIN5fwDbBjgj:1slpRV:GVMjqAXFq_Dk9B-WRbUGlWbXx_ubnGN93TG6rifDkXg",
+      "expire_date": "2024-09-18T12:49:01.834Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "l17ta5p3qbvawuadbs82qx8ajs7b22us",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-xR9Kes5gre1dHEC2FCcV4u4QKQW0b2bei0XY1hq3gUucCzszadnpd0yQH9h2Uu7Qbp3n3tZlTnxX-EEHv_aCz8vh_h1UGPVbk0eTsvBknZckoDgDCaUJidChsoac1lkI0kGhgylopUUIXmiw5GFi7w8Zyjfp:1syw1G:mx-tYLd7j_O7vrSo3y0LO_OUYos_n0WsQ7ZzZS5S4nA",
+      "expire_date": "2024-10-24T16:28:06.988Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "qxhpg9tvz7y8frpxkbg9qmj8jyjggfo0",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYqcuCUNS_Y9Q-XYDi2gROpnhbg7VOoCtm9m3ssMtK3jsC06D5OYi3Hm9Lsl4oeWHcidyq1armWdp2R3xR50sX0VfV4P9-9gpGX81gAhA2ogPncRmxhI2IM6RE7S5gaxjSDc5YiSACL7kDF1Ko5UyIN5fwDbBjgj:1sojMO:CZf0Z-L6_urq8wrU0Rk1yx26nR3KwQUA5iz6HKprOds",
+      "expire_date": "2024-09-26T12:55:44.095Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "sai6qcjj7ugsizb9pwzoodza6ngzx3ju",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYqcuCUNS_Y9Q-XYDi2gROpnhbg7VOoCtm9m3ssMtK3jsC06D5OYi3Hm9Lsl4oeWHcidyq1armWdp2R3xR50sX0VfV4P9-9gpGX81gAhA2ogPncRmxhI2IM6RE7S5gaxjSDc5YiSACL7kDF1Ko5UyIN5fwDbBjgj:1swMj1:UpFSbMOHQUGA795DZsi1qSq7ImahATQNxyHjalIt820",
+      "expire_date": "2024-10-17T14:22:39.098Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "sn3u3lz5b9vyo43hxamnx0bpbjm2z2tk",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-xR9Kes5gre1dHEC2FCcV4u4QKQW0b2bei0XY1hq3gUucCzszadnpd0yQH9h2Uu7Qbp3n3tZlTnxX-EEHv_aCz8vh_h1UGPVbk0eTsvBknZckoDgDCaUJidChsoac1lkI0kGhgylopUUIXmiw5GFi7w8Zyjfp:1t0IpX:b1jI0HFPfhB0q_f6d-iX9C8yoTLMsLwSXSInJp9ogoQ",
+      "expire_date": "2024-10-28T11:01:39.326Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "xncxul5cgrqrm1b1zema6l58nip22mry",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYqcuCUNS_Y9Q-XYDi2gROpnhbg7VOoCtm9m3ssMtK3jsC06D5OYi3Hm9Lsl4oeWHcidyq1armWdp2R3xR50sX0VfV4P9-9gpGX81gAhA2ogPncRmxhI2IM6RE7S5gaxjSDc5YiSACL7kDF1Ko5UyIN5fwDbBjgj:1sqfR3:TwESimrSnFkysA2XS3og1xYW_BV3--z-zOJYcZLY9xY",
+      "expire_date": "2024-10-01T21:08:33.145Z"
     }
   },
   {
@@ -123,9 +714,10 @@
       "preview": "uploads/product/iphone15pro.png",
       "category": 4,
       "price": "95000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -137,9 +729,10 @@
       "preview": "uploads/product/galaxy.jpeg",
       "category": 4,
       "price": "85000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -151,9 +744,10 @@
       "preview": "uploads/product/google8.jpg",
       "category": 6,
       "price": "80000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -165,9 +759,10 @@
       "preview": "uploads/product/oneplus11.jpg",
       "category": 4,
       "price": "65000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -179,9 +774,10 @@
       "preview": "uploads/product/xiomi13.png",
       "category": 4,
       "price": "60000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -193,9 +789,10 @@
       "preview": "uploads/product/airpods.jpeg",
       "category": 4,
       "price": "20000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -207,9 +804,10 @@
       "preview": "uploads/product/sumsungduds2.jpg",
       "category": 4,
       "price": "18000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -221,9 +819,10 @@
       "preview": "uploads/product/macbookair.png",
       "category": 5,
       "price": "12000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -235,9 +834,10 @@
       "preview": "uploads/product/dell15.jpg",
       "category": 5,
       "price": "110000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -249,9 +849,10 @@
       "preview": "uploads/product/hpspectre.webp",
       "category": 5,
       "price": "100000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -263,9 +864,10 @@
       "preview": "uploads/product/lenovocarbon.webp",
       "category": 5,
       "price": "95000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -277,9 +879,10 @@
       "preview": "uploads/product/asusrog.jpg",
       "category": 5,
       "price": "90000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -291,9 +894,10 @@
       "preview": "uploads/product/microsoftlaptop.png",
       "category": 5,
       "price": "85000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -305,9 +909,10 @@
       "preview": "uploads/product/amazoneho.jpg",
       "category": 6,
       "price": "25000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -319,9 +924,10 @@
       "preview": "uploads/product/googlenest.jpeg",
       "category": 6,
       "price": "22000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -333,9 +939,10 @@
       "preview": "uploads/product/googlewatch.jpg",
       "category": 6,
       "price": "45000.00",
-      "created_at": "2024-10-10T09:04:12.855Z",
-      "updated_at": "2024-10-10T09:04:12.855Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -347,9 +954,10 @@
       "preview": "uploads/product/sumsungwatch.jpg",
       "category": 6,
       "price": "40000.00",
-      "created_at": "2024-10-10T09:04:12.856Z",
-      "updated_at": "2024-10-10T09:04:12.856Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -361,9 +969,10 @@
       "preview": "uploads/product/nesttermo.png",
       "category": 6,
       "price": "30000.00",
-      "created_at": "2024-10-10T09:04:12.856Z",
-      "updated_at": "2024-10-10T09:04:12.856Z",
-      "owner": null
+      "created_at": "2024-10-14T11:40:33.279Z",
+      "updated_at": "2024-10-14T11:40:33.279Z",
+      "owner": null,
+      "is_published": true
     }
   },
   {
@@ -373,6 +982,118 @@
       "phone": "+7 (123) 456-78-90",
       "email": "info@nextgenshop.ru",
       "address": "ул. Примерная, д. 1, Москва, Россия"
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 1,
+    "fields": {
+      "title": "Как выбрать идеальный ноутбук: подробное руководсто",
+      "slug": null,
+      "content": "<p>Выбор ноутбука может стать настоящим испытанием, особенно с учетом множества доступных моделей и характеристик. Чтобы помочь вам принять правильное решение, мы собрали основные рекомендации по выбору идеального ноутбука.</p>\r\n            <h4>1. Определите свои потребности</h2>\r\n            <p>Прежде чем приступить к выбору, оцените, для каких задач вам понадобится ноутбук. Если вы планируете использовать его для работы с текстами и интернет-серфинга, не обязательно тратиться на топовые модели. Для игр, видеомонтажа или других ресурсоемких задач вам потребуется более мощный компьютер.</p>\r\n            <h4>2. Процессор (CPU)</h2>\r\n            <p>Процессор — это «мозг» вашего ноутбука. Для повседневных задач подойдет процессор Intel Core i5 или AMD Ryzen 5. Для более сложных задач выбирайте Intel Core i7 или AMD Ryzen 7. Процессоры последних поколений обеспечивают лучшую производительность и энергоэффективность.</p>\r\n            <h4>3. Оперативная память (RAM)</h2>\r\n            <p>Оперативная память влияет на многозадачность и скорость работы ноутбука. Минимум для комфортного использования — 8 ГБ. Если вы работаете с тяжелыми программами или играете в современные игры, лучше выбрать модель с 16 ГБ RAM или больше.</p>\r\n            <h4>4. Хранилище</h2>\r\n            <p>SSD (твердотельный накопитель) обеспечивает более быструю загрузку системы и программ по сравнению с традиционными HDD (жесткими дисками). Рекомендуется выбирать ноутбук с SSD объемом от 256 ГБ. Если вам требуется больше пространства, рассмотрите модели с комбинированным SSD и HDD.</p>\r\n            <h4>5. Дисплей</h2>\r\n            <p>Размер экрана и его разрешение также важны. Для большинства пользователей достаточно экрана с диагональю 15-17 дюймов и разрешением Full HD (1920x1080). Если вы работаете с графикой или видео, стоит рассмотреть модели с более высоким разрешением и качественной цветопередачей.</p>\r\n            <h4>6. Аккумулятор</h2>\r\n            <p>Время работы от аккумулятора особенно важно для пользователей, которые часто работают вне дома. Обратите внимание на модели с длительным временем работы и возможностью быстрой зарядки.</p>\r\n            <h4>7. Порты и разъемы</h2>\r\n            <p>Проверьте наличие необходимых вам портов — USB, HDMI, кард-ридер. Некоторые современные ноутбуки могут иметь только USB-C порты, что требует наличия переходников.</p>\r\n            <h4>8. Операционная система</h2>\r\n            <p>Выбор между Windows, macOS и Linux зависит от ваших предпочтений и задач. Windows является наиболее универсальной системой, macOS — для пользователей Apple, а Linux — для тех, кто предпочитает открытый исходный код.</p>",
+      "preview": "uploads/article/nbooks.webp",
+      "created_at": "2024-10-14T11:40:33.287Z",
+      "is_published": true,
+      "views_count": 98
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 2,
+    "fields": {
+      "title": "Как выбрать идеальный смартфон: советы по выбору",
+      "slug": "test",
+      "content": "<p>В современном мире смартфоны стали неотъемлемой частью нашей жизни. Выбор подходящего телефона может быть непростой задачей, особенно с таким большим количеством моделей и характеристик на рынке. В этой статье мы рассмотрим ключевые моменты, которые стоит учитывать при выборе нового смартфона.</p>\r\n            <h4>1. Определите свои потребности</h2>\r\n            <p>Перед тем как приступать к выбору телефона, важно понять, для каких целей он вам нужен. Если вы планируете использовать его в основном для звонков и сообщений, возможно, вам не нужны самые современные технологии. Однако, если вы хотите использовать телефон для игр, фотографий и видео, стоит обратить внимание на более мощные устройства.</p>\r\n            <h4>2. Экран и его характеристики</h2>\r\n            <p>Экран — один из наиболее важных аспектов при выборе смартфона. Обратите внимание на размер дисплея и его разрешение. Большой экран с высоким разрешением обеспечит лучшее качество изображения, но он может сделать телефон менее компактным. Также важно учитывать тип экрана (LCD, OLED) и его характеристики, такие как яркость и контрастность.</p>\r\n            <h4>3. Производительность</h2>\r\n            <p>Производительность телефона напрямую связана с его процессором и оперативной памятью. Чем мощнее процессор и больше оперативной памяти, тем лучше производительность устройства. Для большинства пользователей вполне достаточно современных процессоров среднего уровня, но если вы часто запускаете ресурсоёмкие приложения или игры, рассмотрите флагманские модели.</p>\r\n            <h2>4. Камера</h2>\r\n            <p>Качество камеры стало одним из главных факторов при выборе телефона. Обратите внимание на количество мегапикселей, но не забывайте, что важны и другие параметры, такие как диафрагма, стабилизация изображения и дополнительные функции (например, ночной режим, ультраширокий угол).</p>\r\n            <h4>5. Время работы от аккумулятора</h2>\r\n            <p>Аккумулятор играет важную роль в использовании смартфона. Чем больше ёмкость аккумулятора, тем дольше телефон будет работать без подзарядки. Однако, не забывайте, что время работы зависит не только от ёмкости аккумулятора, но и от оптимизации программного обеспечения и энергопотребления устройства.</p>\r\n            <h4>6. Хранение данных</h2>\r\n            <p>Место для хранения данных также важно. Современные смартфоны обычно предлагают от 64 ГБ до 512 ГБ встроенной памяти. Если вы планируете хранить много фотографий, видео и приложений, выберите модель с большим объёмом памяти или поддержкой карт microSD.</p>\r\n            <h4>7. Операционная система и обновления</h2>\r\n            <p>Убедитесь, что выбранный вами смартфон поддерживает актуальные версии операционной системы и будет получать регулярные обновления. Это не только улучшает безопасность устройства, но и обеспечивает доступ к последним функциям и улучшениям.</p>\r\n            <h4>8. Цена</h2>\r\n            <p>Наконец, цена — это важный фактор. Постарайтесь выбрать телефон, который соответствует вашим потребностям и бюджету. Не всегда самые дорогие модели являются лучшими, и многие устройства среднего класса предлагают отличное соотношение цены и качества.</p>\r\n            <h4>Заключение</h2>\r\n            <p>Выбор смартфона — это важное решение, которое может существенно повлиять на вашу повседневную жизнь. Учитывая эти ключевые моменты и тщательно исследуя доступные варианты, вы сможете найти идеальное устройство, которое будет удовлетворять ваши потребности и предпочтения. Не спешите с выбором и сравните несколько моделей перед тем, как сделать окончательное решение.</p>",
+      "preview": "uploads/article/phones.jpg",
+      "created_at": "2024-10-14T11:40:33.287Z",
+      "is_published": true,
+      "views_count": 98
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 6,
+    "fields": {
+      "title": "Смартфоны будущего: Что нас ждет через 5 лет?",
+      "slug": "3245",
+      "content": "Современные смартфоны впечатляют своей мощностью и функциональностью, но что будет через 5 лет? Развитие гибких экранов обещает нам устройства, которые можно будет сгибать в несколько раз. Батареи станут значительно более ёмкими благодаря новым материалам, а технологии быстрой зарядки позволят восполнить их за считанные минуты. Также ожидается широкое распространение 6G-сетей, что обеспечит ещё большую скорость передачи данных. Искусственный интеллект в смартфонах станет гораздо более \"умным\", адаптируясь к потребностям пользователя и активно предсказывая его действия. В целом, смартфоны будущего будут еще более персонализированными и интегрированными с другими гаджетами.",
+      "preview": "uploads/article/2-2.jpg",
+      "created_at": "2024-10-14T11:40:33.287Z",
+      "is_published": true,
+      "views_count": 98
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 7,
+    "fields": {
+      "title": "Беспроводные наушники: будущее без проводов",
+      "slug": null,
+      "content": "Беспроводные наушники стали неотъемлемой частью современной жизни. Сегодня это не просто аксессуар для музыки — это целая экосистема, связанная с вашими смартфонами, умными часами и даже автомобилями. Современные наушники предлагают активное шумоподавление, что делает их идеальными для использования в шумных местах, таких как самолеты и общественный транспорт. Технологии Bluetooth развиваются, и новые версии обеспечивают стабильное соединение и высокое качество звука. В будущем мы можем ожидать более совершенные технологии улучшения звука, а также увеличенную продолжительность работы на одном заряде. Важной тенденцией становится миниатюризация и улучшение эргономики.",
+      "preview": "uploads/article/221.jpg",
+      "created_at": "2024-10-14T11:40:33.287Z",
+      "is_published": true,
+      "views_count": 98
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 8,
+    "fields": {
+      "title": "Умные часы: личный ассистент на вашем запястье",
+      "slug": null,
+      "content": "Умные часы давно перестали быть просто устройствами для показа времени. Сегодня это мини-компьютеры, которые могут отслеживать ваши шаги, измерять пульс, следить за качеством сна и даже управлять умным домом. Часы становятся всё более автономными благодаря встроенным SIM-картам и возможностям совершения звонков и отправки сообщений без подключения к смартфону. Важным направлением развития умных часов является здоровье. Новые модели позволяют проводить ЭКГ и измерять уровень кислорода в крови, что делает их полезными не только для спортсменов, но и для людей с хроническими заболеваниями.",
+      "preview": "uploads/article/clock.jpg",
+      "created_at": "2024-10-14T11:40:33.287Z",
+      "is_published": true,
+      "views_count": 99
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 9,
+    "fields": {
+      "title": "Умные часы: личный ассистент",
+      "slug": "umnyie-chasyi-lichnyij-assistent",
+      "content": "Умные часы давно перестали быть просто устройствами для показа времени. Сегодня это мини-компьютеры, которые могут отслеживать ваши шаги, измерять пульс, следить за качеством сна и даже управлять умным домом. Часы становятся всё более автономными благодаря встроенным SIM-картам и возможностям совершения звонков и отправки сообщений без подключения к смартфону. Важным направлением развития умных часов является здоровье. Новые модели позволяют проводить ЭКГ и измерять уровень кислорода в крови, что делает их полезными не только для спортсменов, но и для людей с хроническими заболеваниями.",
+      "preview": "uploads/article/clock_Ml4mEnS.jpg",
+      "created_at": "2024-10-14T11:40:33.287Z",
+      "is_published": false,
+      "views_count": 98
+    }
+  },
+  {
+    "model": "blog.article",
+    "pk": 10,
+    "fields": {
+      "title": "Интернет вещей: умный дом как реальность",
+      "slug": "internet-veschej-umnyij-dom-kak-realnost",
+      "content": "Интернет вещей (IoT) быстро проникает в нашу повседневную жизнь, и одним из его ключевых направлений становится умный дом. От умных лампочек, которые можно настроить с помощью смартфона, до роботов-пылесосов и умных термостатов — все это позволяет автоматизировать и упростить быт. В будущем роль IoT только усилится. Например, холодильники смогут сами заказывать продукты, когда их запасы подойдут к концу, а умные системы безопасности обеспечат круглосуточный мониторинг дома с оповещениями в случае подозрительной активности. Таким образом, умные дома становятся не просто трендом, а настоящей необходимостью для комфортной и безопасной жизни.",
+      "preview": "uploads/article/p8615.jpg",
+      "created_at": "2024-10-14T11:40:33.287Z",
+      "is_published": true,
+      "views_count": 101
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$B7A9sFkVon8aytaxPfKGp0$wpnS+kqXU+zxxPk9Pj+CEQ5cE45+Q24WquKE1IyFHVI=",
+      "last_login": "2024-10-14T11:01:39.324Z",
+      "is_superuser": true,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-10-10T16:27:59.505Z",
+      "email": "pecheritsa.roman@gmail.com",
+      "phone": "",
+      "avatar": "",
+      "country": null,
+      "token": null,
+      "groups": [],
+      "user_permissions": []
     }
   }
 ]
