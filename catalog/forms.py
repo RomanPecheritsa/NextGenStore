@@ -26,7 +26,7 @@ class ProductForm(forms.ModelForm):
             "category",
             "price",
             "is_published",
-        ]  # Добавлено поле is_published
+        ]
         widgets = {
             "name": forms.TextInput(
                 attrs={
