@@ -39,9 +39,18 @@
                         <label for="price" class="form-label">Цена</label>
                         {{ form.price }}
                     </div>
+                    <div class="mb-3 form-check">
+                        {{ form.is_published }}
+                        <label class="form-check-label" for="{{ form.is_published.id_for_label }}">
+                            Опубликовано
+                        </label>
+                        {% for error in form.is_published.errors %}
+                            <div class="alert alert-danger">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Сохранить изменения</button>
-                    <a href="{% url 'catalog:product_list' %}" class="btn btn-outline-primary">Назад к списку
-                        товаров</a>
+                    <a href="{% url 'catalog:product_list' %}" class="btn btn-outline-primary">Назад к списку товаров</a>
                 </div>
                 <div class="col-md-6">
                     <h3 class="mt-4">Версии продукта</h3>

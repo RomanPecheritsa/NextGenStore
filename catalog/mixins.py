@@ -5,8 +5,10 @@ from django.shortcuts import redirect
 
 
 class CustomLoginRequiredMixin(LoginRequiredMixin):
-    login_url = reverse_lazy('users:login')
+    login_url = reverse_lazy("users:login")
 
     def handle_no_permission(self):
-        messages.error(self.request, "Только авторизованные пользователи могут управлять товарами")
+        messages.error(
+            self.request, "Только авторизованные пользователи могут управлять товарами"
+        )
         return redirect(self.login_url)

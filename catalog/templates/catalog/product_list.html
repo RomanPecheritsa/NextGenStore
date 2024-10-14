@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load product_filters %}
+{% load moderator_only %}
 
 {% block content %}
     <div class="container">
@@ -48,12 +49,14 @@
                                role="button">Подробнее</a>
                             <a class="btn btn-outline-success" href="#" role="button">{{ object.price }}</a>
                         </div>
+                        {% if user == object.owner or user|has_required_perms %}
                         <div class="btn-group d-flex justify-content-center">
                             <a class="btn btn-outline-warning me-1" href="{% url 'catalog:product_edit' object.pk %}"
                                role="button">Редактировать</a>
                             <a class="btn btn-outline-danger" href="{% url 'catalog:product_delete' object.pk %}"
                                role="button">Удалить</a>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
