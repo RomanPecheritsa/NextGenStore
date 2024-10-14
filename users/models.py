@@ -14,7 +14,7 @@ class User(AbstractUser):
 
     username = None
     email = models.EmailField(unique=True, verbose_name="Email")
-    phone = PhoneNumberField(verbose_name="Номер телефона")
+    phone = PhoneNumberField(verbose_name="Номер телефона", **BLANK_NULL_TRUE)
     avatar = models.ImageField(
         upload_to=upload_to, **BLANK_NULL_TRUE, verbose_name="Аватар"
     )
