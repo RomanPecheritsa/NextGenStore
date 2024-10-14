@@ -48,7 +48,7 @@ or
 python manage.py csu --email=example@example.com --password=SuperSecretPassword123
 ```
 
-### 6.1. Особенности для проверки ДЗ 23.1
+### 6.1. Для проверки ДЗ 23.1
 После выпонения пунктов 1-6
 выполните команду:
 ```bash
@@ -60,6 +60,7 @@ python3 manage.py create_moderator
 3. Создаст пользователя owner@test.com (который станет создателем товара id__in=[29,30] (идут первыми в ProductListView))
 4. Создаст пользователя moderator@test.com (который имеет права moderator)
 5. Добавит для всех суперпользователей права модератора
+6. ПАРОЛЬ ДЛЯ ВСЕХ ПОЛЬЗОВАТЕЛЕЙ -> 12345678
 
 
 ### 7. Run Server
