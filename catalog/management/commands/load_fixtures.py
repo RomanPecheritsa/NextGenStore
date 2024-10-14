@@ -10,7 +10,7 @@ class Command(BaseCommand):
     """
     Custom management command to populate the database with data from a JSON fixture file.
     The command will first clear existing data from the Product, Category, ContactInfo, and Article tables,
-    and then repopulate them with the data from the fixture file `catalog_data.json`.
+    and then repopulate them with the data from the fixture file `load_data.json`.
     """
 
     @staticmethod
@@ -70,4 +70,4 @@ class Command(BaseCommand):
             articles_for_create.append(Article(id=item["pk"], **article_data))
         Article.objects.bulk_create(articles_for_create)
 
-        self.stdout.write(self.style.SUCCESS('База данных успешно заполнена'))
+        self.stdout.write(self.style.SUCCESS("База данных успешно заполнена"))
