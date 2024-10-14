@@ -19,11 +19,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'phonenumber_field',
-
+    "phonenumber_field",
     "catalog",
     "blog",
-    'users'
+    "users",
 ]
 
 MIDDLEWARE = [
@@ -115,9 +114,9 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 EMAIL_ADMIN = EMAIL_HOST_USER
 
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = "users.User"
 
-PHONENUMBER_DEFAULT_REGION = 'RU'
+PHONENUMBER_DEFAULT_REGION = "RU"
 
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
