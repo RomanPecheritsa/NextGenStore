@@ -120,3 +120,13 @@ PHONENUMBER_DEFAULT_REGION = "RU"
 
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
+
+CACHES_ENABLE = os.getenv('CACHES_ENABLE', 'False') == 'True'
+
+if CACHES_ENABLE:
+    CACHES = {
+        "default": {
+            "BACKEND": "django.core.cache.backends.redis.RedisCache",
+            "LOCATION": os.getenv('LOCATION'),
+        }
+    }
