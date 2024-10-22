@@ -25,9 +25,21 @@
         </div>
     </div>
 
-    <h2 class="text-center md-3">Популярные товары</h2><br>
+    <h2 class="text-center md-3">Товары</h2><br>
     <div class="mb-3">
         <a class="btn btn-primary" href="{% url 'catalog:product_create' %}" role="button">Добавить продукт</a>
+    </div>
+    <div class="mb-3">
+        <a href="{% url 'catalog:product_list' %}"
+           class="btn {% if not request.GET.category or request.GET.category == 'all' %}btn-primary{% else %}btn-outline-primary{% endif %}">
+            Все
+        </a>
+        {% for category in categories %}
+            <a href="?category={{ category.name }}"
+               class="btn {% if request.GET.category == category.name %}btn-primary{% else %}btn-outline-primary{% endif %}">
+                {{ category.name }}
+            </a>
+        {% endfor %}
     </div>
     <div class="row row-cols-1 row-cols-md-3 mb-4 g-4 text-center">
         {% for object in object_list %}
@@ -50,12 +62,13 @@
                             <a class="btn btn-outline-success" href="#" role="button">{{ object.price }}</a>
                         </div>
                         {% if user == object.owner or user|has_required_perms %}
-                        <div class="btn-group d-flex justify-content-center">
-                            <a class="btn btn-outline-warning me-1" href="{% url 'catalog:product_edit' object.pk %}"
-                               role="button">Редактировать</a>
-                            <a class="btn btn-outline-danger" href="{% url 'catalog:product_delete' object.pk %}"
-                               role="button">Удалить</a>
-                        </div>
+                            <div class="btn-group d-flex justify-content-center">
+                                <a class="btn btn-outline-warning me-1"
+                                   href="{% url 'catalog:product_edit' object.pk %}"
+                                   role="button">Редактировать</a>
+                                <a class="btn btn-outline-danger" href="{% url 'catalog:product_delete' object.pk %}"
+                                   role="button">Удалить</a>
+                            </div>
                         {% endif %}
                     </div>
                 </div>
